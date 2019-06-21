@@ -71,6 +71,7 @@ Vagrant.configure("2") do |config|
         bc m4 make unzip cmake python autoconf \
         libwxgtk3.0-dev libgl1-mesa-dev libglu1-mesa-dev \
         libglfw3 libglfw3-dev libglew2.0 libglew-dev
+    sudo apt-get install -y xsltproc fop libxml2-utils
     curl -L -O https://github.com/fhunleth/fwup/releases/download/v1.3.1/fwup_1.3.1_amd64.deb -o fwup_1.3.1_amd64.deb
     if [ ! -d "$HOME/.asdf" ]; then
         git clone https://github.com/asdf-vm/asdf.git ~/.asdf --branch v0.7.2
